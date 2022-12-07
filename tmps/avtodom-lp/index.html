@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Название</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+	<link href="icons/style.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="logo">
+                        <svg aria-hidden="true" data-prefix="far" data-icon="image" class="logotype svg-inline--fa fa-image fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 336H54a6 6 0 0 1-6-6V118a6 6 0 0 1 6-6h404a6 6 0 0 1 6 6v276a6 6 0 0 1-6 6zM128 152c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zM96 352h320v-80l-87.515-87.515c-4.686-4.686-12.284-4.686-16.971 0L192 304l-39.515-39.515c-4.686-4.686-12.284-4.686-16.971 0L96 304v48z"/><style xmlns="http://www.w3.org/1999/xhtml" type="text/css"></style>
+                        </svg>
+					</div>
+					<div class="top-h1">
+						<h1>«Название» - обслуживание автомобилей любых марок</h1>
+					</div>
+					<p class="top-text">
+						Уже 10 лет мы делаем так, чтобы вы продолжали с удовольствием пользоваться своим автомобилем и он Вас не подводил.
+					</p>
+					<p class="phone-top">+7 (123) 123-4567</p>
+					<button type="button" class="btn btn-warning btn-lg btn-top" data-toggle="modal" data-target="#modal-recall">
+					  Хотите мы сами перезвоним?
+					</button>
+
+					<!-- modal-recall -->
+					<div class="modal fade" id="modal-recall" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-body">
+					   			<form class="center-block recall-form" id="recall" method="post">
+										<h4 class="text-center">Просто укажите Ваш телефон</h4>
+										<p>Мастер незамедлительно свяжется с вами.</p>
+										<div class="form-group">
+											<input type="text" class="form-control" name="user_tel" pattern="[0-9\]{7,20}" placeholder="Ваш телефон" required>
+											<input type="hidden" name="recall-form">
+										</div>											
+										<button class="btn btn-primary">Отправить заявку</button>
+									</form>
+					   		</div>
+					   		<div class="modal-footer">
+									<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Закрыть</button>
+								</div>
+					    </div>
+					  </div>
+					</div>
+					<!-- modal-recall -->
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="service">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h2>Услуги сервиса</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<ul class="list-inline">
+						<li class="item-list">
+							<a href="#myModal1" type="button" data-toggle="modal">
+								<span class="icon ah-generator"></span>
+								<p class="item-text">Ремонт стартеров генераторов</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal2" type="button" data-toggle="modal">
+								<span class="icon ah-detail1"></span>
+								<p class="item-text">Ремонт агрегатных узлов</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal3" type="button" data-toggle="modal">
+								<span class="icon ah-finde"></span>
+								<p class="item-text">Диагностика</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal4" type="button" data-toggle="modal">
+								<span class="icon ah-shod"></span>
+								<p class="item-text">Развал схождение</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal5" type="button" data-toggle="modal">
+								<span class="icon ah-ventilator"></span>
+								<p class="item-text">Заправка кондиционера</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal6" type="button" data-toggle="modal">
+								<span class="icon ah-porshen"></span>
+								<p class="item-text">Ремонт дизельных двигателей</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal7" type="button" data-toggle="modal">
+								<span class="icon  ah-instr"></span>
+								<p class="item-text">Техническое обслуживание</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal8" type="button" data-toggle="modal">
+								<span class="icon ah-lodka"></span>
+								<p class="item-text">Ремонт лодочных моторов</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal9" type="button" data-toggle="modal">
+								<span class="icon ah-engin"></span>
+								<p class="item-text">Диагностика и ремонт бензиновых дизель генераторов</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal10" type="button" data-toggle="modal">
+								<span class="icon ah-detail2"></span>
+								<p class="item-text">Запчасти</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal11" type="button" data-toggle="modal">
+								<span class="icon ah-moto"></span>
+								<p class="item-text">Ремонт мототехники</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="advantage">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+				<h2 class="text-center">Действующие акции</h2>
+					<div id="carousel-ah" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-ah" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-ah" data-slide-to="1"></li>
+					    <li data-target="#carousel-ah" data-slide-to="2"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active center-block">
+							  <img class="img-responsive" src="./images/slides/slide-1.jpg" alt="...">
+							  <div class="carousel-caption">
+							  </div>
+							</div>
+					    <div class="item">
+							  <img class="img-responsive" src="./images/slides/slide-2.jpg" alt="...">
+							  <div class="carousel-caption">
+							  </div>
+							</div>
+					    <div class="item">
+							  <img class="img-responsive" src="./images/slides/slide-3.jpg" alt="...">
+							  <div class="carousel-caption">
+							    <h3>Скидка 15% + 15% = 30% со всей суммы</h3>
+							    <p>При покупке запчастей и ремонте!</p>
+							  </div>
+							</div>
+					  </div>
+					  <!-- /Wrapper for slides -->
+				    <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel-ah" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-ah" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="washing">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2 class="text-center">Автомойка</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<form class="wash-form" id="wash" method="post">
+						<h4 class="text-center">Оформите заявку и получите скидку 5%</h4>
+						<div class="form-group">
+							<input type="text" class="form-control" name="user_name" pattern="^[А-Яа-яЁё\s]+$" placeholder="Ваше имя" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="user_tel" pattern="[0-9\]{7,20}" placeholder="Ваш телефон" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="num_car" pattern="^[А-Яа-яЁё\s0-9]+$" placeholder="Номер автомобиля" required>
+							<input type="hidden" name="washing-form">
+						</div>
+						<button class="btn btn-primary btn-block">Отправить заявку</button>
+					</form>		
+				</div>
+				<div class="col-md-7">
+					<div class="wrap-washing">
+						<div class="table-responsive">
+							<table class="table table-bordered washing">
+								<tr>
+									<th></th>
+							  	<th>Легковые автомобили</th>
+								<th>Кроссоверы/<br>S класс</th>
+								<th>Микроавтобусы/<br>Внедорожники</th>
+							  </tr>
+							  <tr>
+							  	<td>Мойка люкс*</td>
+								<td>550 руб.</td>
+								<td>650 руб.</td>
+								<td>750 руб.</td>
+							  </tr>
+							  <tr>
+							  	<td>Полировка кузова (защитный слой)**</td>
+							  	<td>1500 руб.</td>
+							  	<td>1700 руб.</td>
+							  	<td>2000 руб.</td>
+							  </tr>
+							  <tr>
+							  	<td>Восстановительная полировка кузова**</td>
+							  	<td>4500 руб.</td>
+							  	<td>5500 руб.</td>
+								  <td>6500 руб.</td>
+							  </tr>
+							  <tr>
+							  	<td>Химчистка салона***</td>
+							  	<td>3000 руб.</td>
+							  	<td>4500 руб.</td>
+									<td>6000 руб.</td>
+							  </tr>
+							</table>
+						</div>
+						<p>* мойка кузова, мойка ковриков, уборка салона от пыли, протирка стекол внутри автомобиля, не включает уборку багажного отделения</p>
+						<p>** включая крышу.</p>
+						<p>*** включая химчистку багажного отделения</p>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</section>
+
+	<section class="for-wash">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<p>+7 (123) 123 45 67</p>
+					<p>Работаем с 9 до 20 часов</p>
+					<p>Ежедневно</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<section id="evacuation">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-offset-6 col-sm-6">
+					<div class="text-right">
+						<h2>Услуги эвакуатора</h2>
+						<p>В черте города Название Города <br><span class="price-evacuator">1000 руб.</span></p>
+						<p>* В стоимость включено (подача + 1час)</p>
+					</div>
+					<form class="evacuator-form" id="evacuator" method="post">
+					  <div class="form-group">
+					    <input type="text" class="form-control" name="user_tel" pattern="[0-9\]{7,20}" placeholder="Введите ваш телефон" required>
+					    <input type="hidden" name="evacuator-form">
+					  </div>
+					  <button class="btn btn-primary btn-block">Вызвать эвакуатор</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="map">
+		<div class="container-fluid">
+			<div class="row" id="wait">
+				<div class="col-lg-offset-2 col-lg-3 col-md-4 col-sm-6 text-center">
+					<div class="contacts">
+						<h2>Ждем Вас</h2>
+						<p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Адрес: Областная обл., г. Город, ул.Уличная, 1 А</p>
+						<p><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> СТО: +7 (123) 456-7890</p>
+						<p><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Aвтомойка: +7 (123) 456-7890</p>
+						<p><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Координаты для GPS: N11.11111° E22.2222°</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=IJ5dAnerhvlteGVc-O6rlpeqpp3MPFGe&amp;width=100%&amp;height=600&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 text-center">
+					<div class="logo">
+                        <svg aria-hidden="true" data-prefix="far" data-icon="image" class="logotype svg-inline--fa fa-image fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 336H54a6 6 0 0 1-6-6V118a6 6 0 0 1 6-6h404a6 6 0 0 1 6 6v276a6 6 0 0 1-6 6zM128 152c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zM96 352h320v-80l-87.515-87.515c-4.686-4.686-12.284-4.686-16.971 0L192 304l-39.515-39.515c-4.686-4.686-12.284-4.686-16.971 0L96 304v48z"/><style xmlns="http://www.w3.org/1999/xhtml" type="text/css"></style>
+                        </svg>
+					</div>
+					<div class="copyright">
+						<p>
+							<span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2016 Сайт
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<ul class="list-unstyled">
+						<li>
+							<a href="#myModal1" type="button" data-toggle="modal">
+								<p class="item-text">Ремонт стартеров генераторов</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal2" type="button" data-toggle="modal">
+								<p class="item-text">Ремонт агрегатных узлов</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal3" type="button" data-toggle="modal">
+								<p class="item-text">Диагностика</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal4" type="button" data-toggle="modal">
+								<p class="item-text">Развал схождение</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal5" type="button" data-toggle="modal">
+								<p class="item-text">Заправка кондиционера</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal6" type="button" data-toggle="modal">
+								<p class="item-text">Ремонт дизельных двигателей</p>
+							</a>
+						</li>
+					</ul>					
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<ul class="list-unstyled">
+						<li>
+							<a href="#myModal7" type="button" data-toggle="modal">
+								<p class="item-text">Техническое обслуживание</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal8" type="button" data-toggle="modal">
+								<p class="item-text">Ремонт лодочных моторов</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal9" type="button" data-toggle="modal">
+								<p class="item-text">Диагностика и ремонт бензиновых дизель генераторов</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" type="button" data-toggle="modal">
+								<p class="item-text">Запчасти</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal11" type="button" data-toggle="modal">
+								<p class="item-text">Ремонт мототехники</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer_contacts">
+						<p>СТО: +7 (123) 456-7890</p>
+						<p>Aвтомойка: +7 (123) 456-7890</p>
+						<p>E-mail: email@domain.ru</p>
+						<p>Сайт: <a href="/">domain.ru</a></p>
+					</div>
+					<div class="social">
+						<p>Мы в соц.сетях
+						<a href="/"><img src="images/share_32.png" width="32" height="32" /></a>
+					</div>
+					<div class="cards">
+						<img src="images/mastercard.jpg" alt="">
+						<img src="images/visa.jpg" alt="">
+					</div>					
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+    <!-- modals -->
+
+	<div class="modal fade bs-example-modal-lg" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	    <div class="modal-dialog modal-lg" role="document">
+	        <div class="modal-content">
+	    	    <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                <h4 class="modal-title" id="myModalLabel"><span class="icon ah-generator"></span> Ремонт стартеров генераторов</h4>
+	            </div>
+	            <div class="modal-body">
+	   			    <p><strong>Ремонт стартеров генераторов</strong></p>
+                    <img alt="" src="images/modal/123456.jpg" style="height:282px; width:420px; margin: 3%; float:right;">
+
+                    <p>Чтобы автомобиль доставлял радость в поездках и не приносил неожиданных проблем, очень важно, особенно при отправке в дальнее путешествие на машине, пройти тщательное техническое обслуживание вашего авто. Техническое обслуживание автомобилей позволит контролировать машину на дороге. В процессе эксплуатации ваш автомобиль нуждается в постоянном осмотре, уборке салона, мойке, замене неисправных запчастей, замене масла. Качественный уход за автомобилем предохранит кузов автомобиля от воздействия соли и грязи, избавит от образования коррозии на металле и продлит долговечность авто</p>
+
+                    <p><strong>КАК ПОДДЕРЖИВАТЬ АВТОМОБИЛЬ В ИСПРАВНОМ СОСТОЯНИИ</strong></p>
+
+                    <p>Станция технического обслуживания автомобилей осуществляет полный комплекс различных работ, которые связаны с восстановлением технического состояния авто. Не всегда обслуживание обходиться лишь профилактическими работами. Часто требуется детальный ремонт узлов, агрегатов, различные регулировочные работы, а также смазочные и крепёжные. Техническое обслуживание и ремонт автомобилей бывают гарантийными и послегарантийными. Первый вид работ совершается бесплатно, замена неисправных деталей при послегарантийном обслуживании требует от владельца машины определённых денежных затрат на приобретение запчастей.</p>
+
+                    <p><strong>ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ ЛЕГКОВОГО АВТОМОБИЛЯ ВКЛЮЧАЕТ:</strong></p>
+
+                    <ul>
+	                    <li>профилактический осмотр и компьютерную диагностику с целью выявления неполадок в системах автомобиля</li>
+	                    <li>замену масла и другие смазочные работы</li>
+	                    <li>мелкий или капитальный ремонт агрегатов и узлов, если при осмотре выявлены неисправности в их системе</li>
+	                    <li>регулировку различных систем автомобиля</li>
+	                    <li>электротехнические работы</li>
+	                    <li>арматурные работы</li>
+	                    <li>необходимые окрасочные работы кузова</li>
+	                    <li>проверку и регулировку развал-схождения колёс</li>
+	                    <li>тщательный осмотр подвески автомобиля</li>
+                    </ul>
+                    
+                    <p>В зависимости от вида работ и степени их сложности они могут выполняться без снятия агрегата с авто и его разборки. Мастер осуществляет полную проверку различных креплений, зазоров, установку механизмов. Однако внешний осмотр не всегда позволяет обнаружить многие дефекты, поэтому на станции техобслуживания применяется современное диагностическое оборудование, способное дать полную информацию о состоянии вашего автомобиля.</p>
+
+                    <p>Только тщательная компьютерная диагностика технического состояния автомобиля позволит выявить и устранить сложные дефекты и неисправности. Своевременное техническое обслуживание вашего автомобиля позволит вам не беспокоиться о внезапной поломке во время совершения поездки, чувствовать себя за рулём спокойно и уверено.
+                    </p>
+                    <img alt="" src="images/modal/12345.jpg" style="width:100%; margin:3% auto;">
+                    <p>Расценки на некоторые виды работ:</p>
+                    <div class="table-responsive">
+	                    <table class="table table-bordered">
+		                    <tbody>
+			                    <tr>
+				                    <th>Наименование работ</th>
+				                    <th>Цена</th>
+			                    </tr>
+			                    <tr>
+				                    <td>Стоимость нормо-часа</td>
+				                    <td>от 150 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масла</td>
+				                    <td>от 60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масляного фильтра</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена тормозной жидкости</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена воздушного фильтра</td>
+				                    <td>от 10 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок (1 ось)</td>
+				                    <td>от 90 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок и тормозных дисков (1 ось)</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Контрольный осмотр подвески</td>
+				                    <td>60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена сайлент-блоков</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена ступичных подшипников</td>
+				                    <td>от 160 рублей</td>
+			                    </tr>
+		                    </tbody>
+	                    </table>
+                    </div>
+
+                    <p>Данные расценки являются справочными и могут варьироваться как в большую, так и в меньшую сторону в зависимости от марки и модели автомобиля, его конкретных конструктивных особенностей. Некоторые работы не проводятся без предварительной диагностики и необходимых обязательных предварительных работ, в том числе и по рекомендации завода изготовителя</p>
+
+                    <p>Записаться на техническое обслуживание автомобиля можно по телефону<strong> +7 (123) 456 78 90</strong></p>
+                </div>
+	   		    <div class="modal-footer">
+        		    <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		    </div>
+	        </div>
+	    </div>
+	</div>
+
+
+    
+	<div class="modal fade bs-example-modal-lg" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	    <div class="modal-dialog modal-lg" role="document">
+	        <div class="modal-content">
+	    	    <div class="modal-header">
+	        	    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        	    <h4 class="modal-title" id="myModalLabel"><span class="icon ah-detail1"></span> Ремонт агрегатных узлов</h4>
+	      	    </div>
+	     	    <div class="modal-body">
+	   			    <p><strong>Ремонт агрегатных узлов</strong></p>
+                    <img alt="" src="images/modal/123456.jpg" style="height:282px; width:420px; margin: 3%; float:right;">
+
+                    <p>Чтобы автомобиль доставлял радость в поездках и не приносил неожиданных проблем, очень важно, особенно при отправке в дальнее путешествие на машине, пройти тщательное техническое обслуживание вашего авто. Техническое обслуживание автомобилей позволит контролировать машину на дороге. В процессе эксплуатации ваш автомобиль нуждается в постоянном осмотре, уборке салона, мойке, замене неисправных запчастей, замене масла. Качественный уход за автомобилем предохранит кузов автомобиля от воздействия соли и грязи, избавит от образования коррозии на металле и продлит долговечность авто</p>
+
+                    <p><strong>КАК ПОДДЕРЖИВАТЬ АВТОМОБИЛЬ В ИСПРАВНОМ СОСТОЯНИИ</strong></p>
+
+                    <p>Станция технического обслуживания автомобилей осуществляет полный комплекс различных работ, которые связаны с восстановлением технического состояния авто. Не всегда обслуживание обходиться лишь профилактическими работами. Часто требуется детальный ремонт узлов, агрегатов, различные регулировочные работы, а также смазочные и крепёжные. Техническое обслуживание и ремонт автомобилей бывают гарантийными и послегарантийными. Первый вид работ совершается бесплатно, замена неисправных деталей при послегарантийном обслуживании требует от владельца машины определённых денежных затрат на приобретение запчастей.</p>
+
+                    <p><strong>ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ ЛЕГКОВОГО АВТОМОБИЛЯ ВКЛЮЧАЕТ:</strong></p>
+
+                    <ul>
+	                    <li>профилактический осмотр и компьютерную диагностику с целью выявления неполадок в системах автомобиля</li>
+	                    <li>замену масла и другие смазочные работы</li>
+	                    <li>мелкий или капитальный ремонт агрегатов и узлов, если при осмотре выявлены неисправности в их системе</li>
+	                    <li>регулировку различных систем автомобиля</li>
+	                    <li>электротехнические работы</li>
+	                    <li>арматурные работы</li>
+	                    <li>необходимые окрасочные работы кузова</li>
+	                    <li>проверку и регулировку развал-схождения колёс</li>
+	                    <li>тщательный осмотр подвески автомобиля</li>
+                    </ul>
+                    
+                    <p>В зависимости от вида работ и степени их сложности они могут выполняться без снятия агрегата с авто и его разборки. Мастер осуществляет полную проверку различных креплений, зазоров, установку механизмов. Однако внешний осмотр не всегда позволяет обнаружить многие дефекты, поэтому на станции техобслуживания применяется современное диагностическое оборудование, способное дать полную информацию о состоянии вашего автомобиля.</p>
+
+                    <p>Только тщательная компьютерная диагностика технического состояния автомобиля позволит выявить и устранить сложные дефекты и неисправности. Своевременное техническое обслуживание вашего автомобиля позволит вам не беспокоиться о внезапной поломке во время совершения поездки, чувствовать себя за рулём спокойно и уверено.
+                    </p>
+                    <img alt="" src="images/modal/12345.jpg" style="width:100%; margin:3% auto;">
+                    <p>Расценки на некоторые виды работ:</p>
+                    <div class="table-responsive">
+	                    <table class="table table-bordered">
+		                    <tbody>
+			                    <tr>
+				                    <th>Наименование работ</th>
+				                    <th>Цена</th>
+			                    </tr>
+			                    <tr>
+				                    <td>Стоимость нормо-часа</td>
+				                    <td>от 150 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масла</td>
+				                    <td>от 60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масляного фильтра</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена тормозной жидкости</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена воздушного фильтра</td>
+				                    <td>от 10 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок (1 ось)</td>
+				                    <td>от 90 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок и тормозных дисков (1 ось)</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Контрольный осмотр подвески</td>
+				                    <td>60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена сайлент-блоков</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена ступичных подшипников</td>
+				                    <td>от 160 рублей</td>
+			                    </tr>
+		                    </tbody>
+	                    </table>
+                    </div>
+
+                    <p>Данные расценки являются справочными и могут варьироваться как в большую, так и в меньшую сторону в зависимости от марки и модели автомобиля, его конкретных конструктивных особенностей. Некоторые работы не проводятся без предварительной диагностики и необходимых обязательных предварительных работ, в том числе и по рекомендации завода изготовителя</p>
+
+                    <p>Записаться на техническое обслуживание автомобиля можно по телефону<strong> +7 (123) 456 78 90</strong></p>
+                </div>
+	   		    <div class="modal-footer">
+      		        <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+    		    </div>
+	        </div>
+	    </div>
+	</div>
+
+
+    
+	<div class="modal fade bs-example-modal-lg" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	    <div class="modal-dialog modal-lg" role="document">
+	        <div class="modal-content">
+	    	    <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                <h4 class="modal-title" id="myModalLabel"><span class="icon ah-finde"></span> Диагностика</h4>
+	            </div>
+	            <div class="modal-body">
+	   			    <p><strong>Диагностика</strong></p>
+                    <img alt="" src="images/modal/123456.jpg" style="height:282px; width:420px; margin: 3%; float:right;">
+
+                    <p>Чтобы автомобиль доставлял радость в поездках и не приносил неожиданных проблем, очень важно, особенно при отправке в дальнее путешествие на машине, пройти тщательное техническое обслуживание вашего авто. Техническое обслуживание автомобилей позволит контролировать машину на дороге. В процессе эксплуатации ваш автомобиль нуждается в постоянном осмотре, уборке салона, мойке, замене неисправных запчастей, замене масла. Качественный уход за автомобилем предохранит кузов автомобиля от воздействия соли и грязи, избавит от образования коррозии на металле и продлит долговечность авто</p>
+
+                    <p><strong>КАК ПОДДЕРЖИВАТЬ АВТОМОБИЛЬ В ИСПРАВНОМ СОСТОЯНИИ</strong></p>
+
+                    <p>Станция технического обслуживания автомобилей осуществляет полный комплекс различных работ, которые связаны с восстановлением технического состояния авто. Не всегда обслуживание обходиться лишь профилактическими работами. Часто требуется детальный ремонт узлов, агрегатов, различные регулировочные работы, а также смазочные и крепёжные. Техническое обслуживание и ремонт автомобилей бывают гарантийными и послегарантийными. Первый вид работ совершается бесплатно, замена неисправных деталей при послегарантийном обслуживании требует от владельца машины определённых денежных затрат на приобретение запчастей.</p>
+
+                    <p><strong>ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ ЛЕГКОВОГО АВТОМОБИЛЯ ВКЛЮЧАЕТ:</strong></p>
+
+                    <ul>
+	                    <li>профилактический осмотр и компьютерную диагностику с целью выявления неполадок в системах автомобиля</li>
+	                    <li>замену масла и другие смазочные работы</li>
+	                    <li>мелкий или капитальный ремонт агрегатов и узлов, если при осмотре выявлены неисправности в их системе</li>
+	                    <li>регулировку различных систем автомобиля</li>
+	                    <li>электротехнические работы</li>
+	                    <li>арматурные работы</li>
+	                    <li>необходимые окрасочные работы кузова</li>
+	                    <li>проверку и регулировку развал-схождения колёс</li>
+	                    <li>тщательный осмотр подвески автомобиля</li>
+                    </ul>
+                    
+                    <p>В зависимости от вида работ и степени их сложности они могут выполняться без снятия агрегата с авто и его разборки. Мастер осуществляет полную проверку различных креплений, зазоров, установку механизмов. Однако внешний осмотр не всегда позволяет обнаружить многие дефекты, поэтому на станции техобслуживания применяется современное диагностическое оборудование, способное дать полную информацию о состоянии вашего автомобиля.</p>
+
+                    <p>Только тщательная компьютерная диагностика технического состояния автомобиля позволит выявить и устранить сложные дефекты и неисправности. Своевременное техническое обслуживание вашего автомобиля позволит вам не беспокоиться о внезапной поломке во время совершения поездки, чувствовать себя за рулём спокойно и уверено.
+                    </p>
+                    <img alt="" src="images/modal/12345.jpg" style="width:100%; margin:3% auto;">
+                    <p>Расценки на некоторые виды работ:</p>
+                    <div class="table-responsive">
+	                    <table class="table table-bordered">
+		                    <tbody>
+			                    <tr>
+				                    <th>Наименование работ</th>
+				                    <th>Цена</th>
+			                    </tr>
+			                    <tr>
+				                    <td>Стоимость нормо-часа</td>
+				                    <td>от 150 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масла</td>
+				                    <td>от 60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масляного фильтра</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена тормозной жидкости</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена воздушного фильтра</td>
+				                    <td>от 10 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок (1 ось)</td>
+				                    <td>от 90 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок и тормозных дисков (1 ось)</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Контрольный осмотр подвески</td>
+				                    <td>60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена сайлент-блоков</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена ступичных подшипников</td>
+				                    <td>от 160 рублей</td>
+			                    </tr>
+		                    </tbody>
+	                    </table>
+                    </div>
+
+                    <p>Данные расценки являются справочными и могут варьироваться как в большую, так и в меньшую сторону в зависимости от марки и модели автомобиля, его конкретных конструктивных особенностей. Некоторые работы не проводятся без предварительной диагностики и необходимых обязательных предварительных работ, в том числе и по рекомендации завода изготовителя</p>
+
+                    <p>Записаться на техническое обслуживание автомобиля можно по телефону<strong> +7 (123) 456 78 90</strong></p>
+                </div>
+	   		    <div class="modal-footer">
+        		        <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		        </div>
+	        </div>
+	    </div>
+	</div>
+
+
+    
+	<div class="modal fade bs-example-modal-lg" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	    <div class="modal-dialog modal-lg" role="document">
+	        <div class="modal-content">
+	    	    <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                <h4 class="modal-title" id="myModalLabel"><span class="icon ah-shod"></span> Развал-схождение</h4>
+	            </div>
+	            <div class="modal-body">
+	   			    <p><strong>Развал-схождение</strong></p>
+                    <img alt="" src="images/modal/123456.jpg" style="height:282px; width:420px; margin: 3%; float:right;">
+
+                    <p>Чтобы автомобиль доставлял радость в поездках и не приносил неожиданных проблем, очень важно, особенно при отправке в дальнее путешествие на машине, пройти тщательное техническое обслуживание вашего авто. Техническое обслуживание автомобилей позволит контролировать машину на дороге. В процессе эксплуатации ваш автомобиль нуждается в постоянном осмотре, уборке салона, мойке, замене неисправных запчастей, замене масла. Качественный уход за автомобилем предохранит кузов автомобиля от воздействия соли и грязи, избавит от образования коррозии на металле и продлит долговечность авто</p>
+
+                    <p><strong>КАК ПОДДЕРЖИВАТЬ АВТОМОБИЛЬ В ИСПРАВНОМ СОСТОЯНИИ</strong></p>
+
+                    <p>Станция технического обслуживания автомобилей осуществляет полный комплекс различных работ, которые связаны с восстановлением технического состояния авто. Не всегда обслуживание обходиться лишь профилактическими работами. Часто требуется детальный ремонт узлов, агрегатов, различные регулировочные работы, а также смазочные и крепёжные. Техническое обслуживание и ремонт автомобилей бывают гарантийными и послегарантийными. Первый вид работ совершается бесплатно, замена неисправных деталей при послегарантийном обслуживании требует от владельца машины определённых денежных затрат на приобретение запчастей.</p>
+
+                    <p><strong>ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ ЛЕГКОВОГО АВТОМОБИЛЯ ВКЛЮЧАЕТ:</strong></p>
+
+                    <ul>
+	                    <li>профилактический осмотр и компьютерную диагностику с целью выявления неполадок в системах автомобиля</li>
+	                    <li>замену масла и другие смазочные работы</li>
+	                    <li>мелкий или капитальный ремонт агрегатов и узлов, если при осмотре выявлены неисправности в их системе</li>
+	                    <li>регулировку различных систем автомобиля</li>
+	                    <li>электротехнические работы</li>
+	                    <li>арматурные работы</li>
+	                    <li>необходимые окрасочные работы кузова</li>
+	                    <li>проверку и регулировку развал-схождения колёс</li>
+	                    <li>тщательный осмотр подвески автомобиля</li>
+                    </ul>
+                    
+                    <p>В зависимости от вида работ и степени их сложности они могут выполняться без снятия агрегата с авто и его разборки. Мастер осуществляет полную проверку различных креплений, зазоров, установку механизмов. Однако внешний осмотр не всегда позволяет обнаружить многие дефекты, поэтому на станции техобслуживания применяется современное диагностическое оборудование, способное дать полную информацию о состоянии вашего автомобиля.</p>
+
+                    <p>Только тщательная компьютерная диагностика технического состояния автомобиля позволит выявить и устранить сложные дефекты и неисправности. Своевременное техническое обслуживание вашего автомобиля позволит вам не беспокоиться о внезапной поломке во время совершения поездки, чувствовать себя за рулём спокойно и уверено.
+                    </p>
+                    <img alt="" src="images/modal/12345.jpg" style="width:100%; margin:3% auto;">
+                    <p>Расценки на некоторые виды работ:</p>
+                    <div class="table-responsive">
+	                    <table class="table table-bordered">
+		                    <tbody>
+			                    <tr>
+				                    <th>Наименование работ</th>
+				                    <th>Цена</th>
+			                    </tr>
+			                    <tr>
+				                    <td>Стоимость нормо-часа</td>
+				                    <td>от 150 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масла</td>
+				                    <td>от 60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масляного фильтра</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена тормозной жидкости</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена воздушного фильтра</td>
+				                    <td>от 10 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок (1 ось)</td>
+				                    <td>от 90 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок и тормозных дисков (1 ось)</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Контрольный осмотр подвески</td>
+				                    <td>60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена сайлент-блоков</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена ступичных подшипников</td>
+				                    <td>от 160 рублей</td>
+			                    </tr>
+		                    </tbody>
+	                    </table>
+                    </div>
+
+                    <p>Данные расценки являются справочными и могут варьироваться как в большую, так и в меньшую сторону в зависимости от марки и модели автомобиля, его конкретных конструктивных особенностей. Некоторые работы не проводятся без предварительной диагностики и необходимых обязательных предварительных работ, в том числе и по рекомендации завода изготовителя</p>
+
+                    <p>Записаться на техническое обслуживание автомобиля можно по телефону<strong> +7 (123) 456 78 90</strong></p>
+                </div>
+	   		    <div class="modal-footer">
+        		    <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		    </div>
+	        </div>
+	    </div>
+	</div>
+
+
+    
+	<div class="modal fade bs-example-modal-lg" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	    <div class="modal-dialog modal-lg" role="document">
+	        <div class="modal-content">
+	    	    <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                <h4 class="modal-title" id="myModalLabel"><span class="icon ah-ventilator"></span> Запрвака кондиционеров</h4>
+	            </div>
+	            <div class="modal-body">
+	   			    <p><strong>Запрвака кондиционеров</strong></p>
+                    <img alt="" src="images/modal/123456.jpg" style="height:282px; width:420px; margin: 3%; float:right;">
+
+                    <p>Чтобы автомобиль доставлял радость в поездках и не приносил неожиданных проблем, очень важно, особенно при отправке в дальнее путешествие на машине, пройти тщательное техническое обслуживание вашего авто. Техническое обслуживание автомобилей позволит контролировать машину на дороге. В процессе эксплуатации ваш автомобиль нуждается в постоянном осмотре, уборке салона, мойке, замене неисправных запчастей, замене масла. Качественный уход за автомобилем предохранит кузов автомобиля от воздействия соли и грязи, избавит от образования коррозии на металле и продлит долговечность авто</p>
+
+                    <p><strong>КАК ПОДДЕРЖИВАТЬ АВТОМОБИЛЬ В ИСПРАВНОМ СОСТОЯНИИ</strong></p>
+
+                    <p>Станция технического обслуживания автомобилей осуществляет полный комплекс различных работ, которые связаны с восстановлением технического состояния авто. Не всегда обслуживание обходиться лишь профилактическими работами. Часто требуется детальный ремонт узлов, агрегатов, различные регулировочные работы, а также смазочные и крепёжные. Техническое обслуживание и ремонт автомобилей бывают гарантийными и послегарантийными. Первый вид работ совершается бесплатно, замена неисправных деталей при послегарантийном обслуживании требует от владельца машины определённых денежных затрат на приобретение запчастей.</p>
+
+                    <p><strong>ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ ЛЕГКОВОГО АВТОМОБИЛЯ ВКЛЮЧАЕТ:</strong></p>
+
+                    <ul>
+	                    <li>профилактический осмотр и компьютерную диагностику с целью выявления неполадок в системах автомобиля</li>
+	                    <li>замену масла и другие смазочные работы</li>
+	                    <li>мелкий или капитальный ремонт агрегатов и узлов, если при осмотре выявлены неисправности в их системе</li>
+	                    <li>регулировку различных систем автомобиля</li>
+	                    <li>электротехнические работы</li>
+	                    <li>арматурные работы</li>
+	                    <li>необходимые окрасочные работы кузова</li>
+	                    <li>проверку и регулировку развал-схождения колёс</li>
+	                    <li>тщательный осмотр подвески автомобиля</li>
+                    </ul>
+                    
+                    <p>В зависимости от вида работ и степени их сложности они могут выполняться без снятия агрегата с авто и его разборки. Мастер осуществляет полную проверку различных креплений, зазоров, установку механизмов. Однако внешний осмотр не всегда позволяет обнаружить многие дефекты, поэтому на станции техобслуживания применяется современное диагностическое оборудование, способное дать полную информацию о состоянии вашего автомобиля.</p>
+
+                    <p>Только тщательная компьютерная диагностика технического состояния автомобиля позволит выявить и устранить сложные дефекты и неисправности. Своевременное техническое обслуживание вашего автомобиля позволит вам не беспокоиться о внезапной поломке во время совершения поездки, чувствовать себя за рулём спокойно и уверено.
+                    </p>
+                    <img alt="" src="images/modal/12345.jpg" style="width:100%; margin:3% auto;">
+                    <p>Расценки на некоторые виды работ:</p>
+                    <div class="table-responsive">
+	                    <table class="table table-bordered">
+		                    <tbody>
+			                    <tr>
+				                    <th>Наименование работ</th>
+				                    <th>Цена</th>
+			                    </tr>
+			                    <tr>
+				                    <td>Стоимость нормо-часа</td>
+				                    <td>от 150 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масла</td>
+				                    <td>от 60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масляного фильтра</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена тормозной жидкости</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена воздушного фильтра</td>
+				                    <td>от 10 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок (1 ось)</td>
+				                    <td>от 90 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок и тормозных дисков (1 ось)</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Контрольный осмотр подвески</td>
+				                    <td>60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена сайлент-блоков</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена ступичных подшипников</td>
+				                    <td>от 160 рублей</td>
+			                    </tr>
+		                    </tbody>
+	                    </table>
+                    </div>
+
+                    <p>Данные расценки являются справочными и могут варьироваться как в большую, так и в меньшую сторону в зависимости от марки и модели автомобиля, его конкретных конструктивных особенностей. Некоторые работы не проводятся без предварительной диагностики и необходимых обязательных предварительных работ, в том числе и по рекомендации завода изготовителя</p>
+
+                    <p>Записаться на техническое обслуживание автомобиля можно по телефону<strong> +7 (123) 456 78 90</strong></p>
+                </div>
+	   		    <div class="modal-footer">
+        		    <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		    </div>
+	        </div>
+	    </div>
+	</div>
+
+
+    
+	<div class="modal fade bs-example-modal-lg" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	    <div class="modal-dialog modal-lg" role="document">
+	        <div class="modal-content">
+	    	    <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                <h4 class="modal-title" id="myModalLabel"><span class="icon ah-porshen"></span> Ремонт дизельных двигателей</h4>
+	            </div>
+	            <div class="modal-body">
+	   			    <p><strong>Ремонт дизельных двигателей</strong></p>
+                    <img alt="" src="images/modal/123456.jpg" style="height:282px; width:420px; margin: 3%; float:right;">
+
+                    <p>Чтобы автомобиль доставлял радость в поездках и не приносил неожиданных проблем, очень важно, особенно при отправке в дальнее путешествие на машине, пройти тщательное техническое обслуживание вашего авто. Техническое обслуживание автомобилей позволит контролировать машину на дороге. В процессе эксплуатации ваш автомобиль нуждается в постоянном осмотре, уборке салона, мойке, замене неисправных запчастей, замене масла. Качественный уход за автомобилем предохранит кузов автомобиля от воздействия соли и грязи, избавит от образования коррозии на металле и продлит долговечность авто</p>
+
+                    <p><strong>КАК ПОДДЕРЖИВАТЬ АВТОМОБИЛЬ В ИСПРАВНОМ СОСТОЯНИИ</strong></p>
+
+                    <p>Станция технического обслуживания автомобилей осуществляет полный комплекс различных работ, которые связаны с восстановлением технического состояния авто. Не всегда обслуживание обходиться лишь профилактическими работами. Часто требуется детальный ремонт узлов, агрегатов, различные регулировочные работы, а также смазочные и крепёжные. Техническое обслуживание и ремонт автомобилей бывают гарантийными и послегарантийными. Первый вид работ совершается бесплатно, замена неисправных деталей при послегарантийном обслуживании требует от владельца машины определённых денежных затрат на приобретение запчастей.</p>
+
+                    <p><strong>ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ ЛЕГКОВОГО АВТОМОБИЛЯ ВКЛЮЧАЕТ:</strong></p>
+
+                    <ul>
+	                    <li>профилактический осмотр и компьютерную диагностику с целью выявления неполадок в системах автомобиля</li>
+	                    <li>замену масла и другие смазочные работы</li>
+	                    <li>мелкий или капитальный ремонт агрегатов и узлов, если при осмотре выявлены неисправности в их системе</li>
+	                    <li>регулировку различных систем автомобиля</li>
+	                    <li>электротехнические работы</li>
+	                    <li>арматурные работы</li>
+	                    <li>необходимые окрасочные работы кузова</li>
+	                    <li>проверку и регулировку развал-схождения колёс</li>
+	                    <li>тщательный осмотр подвески автомобиля</li>
+                    </ul>
+                    
+                    <p>В зависимости от вида работ и степени их сложности они могут выполняться без снятия агрегата с авто и его разборки. Мастер осуществляет полную проверку различных креплений, зазоров, установку механизмов. Однако внешний осмотр не всегда позволяет обнаружить многие дефекты, поэтому на станции техобслуживания применяется современное диагностическое оборудование, способное дать полную информацию о состоянии вашего автомобиля.</p>
+
+                    <p>Только тщательная компьютерная диагностика технического состояния автомобиля позволит выявить и устранить сложные дефекты и неисправности. Своевременное техническое обслуживание вашего автомобиля позволит вам не беспокоиться о внезапной поломке во время совершения поездки, чувствовать себя за рулём спокойно и уверено.
+                    </p>
+                    <img alt="" src="images/modal/12345.jpg" style="width:100%; margin:3% auto;">
+                    <p>Расценки на некоторые виды работ:</p>
+                    <div class="table-responsive">
+	                    <table class="table table-bordered">
+		                    <tbody>
+			                    <tr>
+				                    <th>Наименование работ</th>
+				                    <th>Цена</th>
+			                    </tr>
+			                    <tr>
+				                    <td>Стоимость нормо-часа</td>
+				                    <td>от 150 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масла</td>
+				                    <td>от 60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масляного фильтра</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена тормозной жидкости</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена воздушного фильтра</td>
+				                    <td>от 10 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок (1 ось)</td>
+				                    <td>от 90 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок и тормозных дисков (1 ось)</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Контрольный осмотр подвески</td>
+				                    <td>60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена сайлент-блоков</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена ступичных подшипников</td>
+				                    <td>от 160 рублей</td>
+			                    </tr>
+		                    </tbody>
+	                    </table>
+                    </div>
+
+                    <p>Данные расценки являются справочными и могут варьироваться как в большую, так и в меньшую сторону в зависимости от марки и модели автомобиля, его конкретных конструктивных особенностей. Некоторые работы не проводятся без предварительной диагностики и необходимых обязательных предварительных работ, в том числе и по рекомендации завода изготовителя</p>
+
+                    <p>Записаться на техническое обслуживание автомобиля можно по телефону<strong> +7 (123) 456 78 90</strong></p>
+                </div>
+	   		    <div class="modal-footer">
+        		    <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		    </div>
+	        </div>
+	    </div>
+	</div>
+
+
+    
+	<div class="modal fade bs-example-modal-lg" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	    <div class="modal-dialog modal-lg" role="document">
+	        <div class="modal-content">
+	    	    <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                <h4 class="modal-title" id="myModalLabel"><span class="icon ah-instr"></span> Техническое обслуживание</h4>
+	            </div>
+	            <div class="modal-body">
+	   			    <p><strong>Техническое обслуживание</strong></p>
+                    <img alt="" src="images/modal/123456.jpg" style="height:282px; width:420px; margin: 3%; float:right;">
+
+                    <p>Чтобы автомобиль доставлял радость в поездках и не приносил неожиданных проблем, очень важно, особенно при отправке в дальнее путешествие на машине, пройти тщательное техническое обслуживание вашего авто. Техническое обслуживание автомобилей позволит контролировать машину на дороге. В процессе эксплуатации ваш автомобиль нуждается в постоянном осмотре, уборке салона, мойке, замене неисправных запчастей, замене масла. Качественный уход за автомобилем предохранит кузов автомобиля от воздействия соли и грязи, избавит от образования коррозии на металле и продлит долговечность авто</p>
+
+                    <p><strong>КАК ПОДДЕРЖИВАТЬ АВТОМОБИЛЬ В ИСПРАВНОМ СОСТОЯНИИ</strong></p>
+
+                    <p>Станция технического обслуживания автомобилей осуществляет полный комплекс различных работ, которые связаны с восстановлением технического состояния авто. Не всегда обслуживание обходиться лишь профилактическими работами. Часто требуется детальный ремонт узлов, агрегатов, различные регулировочные работы, а также смазочные и крепёжные. Техническое обслуживание и ремонт автомобилей бывают гарантийными и послегарантийными. Первый вид работ совершается бесплатно, замена неисправных деталей при послегарантийном обслуживании требует от владельца машины определённых денежных затрат на приобретение запчастей.</p>
+
+                    <p><strong>ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ ЛЕГКОВОГО АВТОМОБИЛЯ ВКЛЮЧАЕТ:</strong></p>
+
+                    <ul>
+	                    <li>профилактический осмотр и компьютерную диагностику с целью выявления неполадок в системах автомобиля</li>
+	                    <li>замену масла и другие смазочные работы</li>
+	                    <li>мелкий или капитальный ремонт агрегатов и узлов, если при осмотре выявлены неисправности в их системе</li>
+	                    <li>регулировку различных систем автомобиля</li>
+	                    <li>электротехнические работы</li>
+	                    <li>арматурные работы</li>
+	                    <li>необходимые окрасочные работы кузова</li>
+	                    <li>проверку и регулировку развал-схождения колёс</li>
+	                    <li>тщательный осмотр подвески автомобиля</li>
+                    </ul>
+                    
+                    <p>В зависимости от вида работ и степени их сложности они могут выполняться без снятия агрегата с авто и его разборки. Мастер осуществляет полную проверку различных креплений, зазоров, установку механизмов. Однако внешний осмотр не всегда позволяет обнаружить многие дефекты, поэтому на станции техобслуживания применяется современное диагностическое оборудование, способное дать полную информацию о состоянии вашего автомобиля.</p>
+
+                    <p>Только тщательная компьютерная диагностика технического состояния автомобиля позволит выявить и устранить сложные дефекты и неисправности. Своевременное техническое обслуживание вашего автомобиля позволит вам не беспокоиться о внезапной поломке во время совершения поездки, чувствовать себя за рулём спокойно и уверено.
+                    </p>
+                    <img alt="" src="images/modal/12345.jpg" style="width:100%; margin:3% auto;">
+                    <p>Расценки на некоторые виды работ:</p>
+                    <div class="table-responsive">
+	                    <table class="table table-bordered">
+		                    <tbody>
+			                    <tr>
+				                    <th>Наименование работ</th>
+				                    <th>Цена</th>
+			                    </tr>
+			                    <tr>
+				                    <td>Стоимость нормо-часа</td>
+				                    <td>от 150 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масла</td>
+				                    <td>от 60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масляного фильтра</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена тормозной жидкости</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена воздушного фильтра</td>
+				                    <td>от 10 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок (1 ось)</td>
+				                    <td>от 90 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок и тормозных дисков (1 ось)</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Контрольный осмотр подвески</td>
+				                    <td>60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена сайлент-блоков</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена ступичных подшипников</td>
+				                    <td>от 160 рублей</td>
+			                    </tr>
+		                    </tbody>
+	                    </table>
+                    </div>
+
+                    <p>Данные расценки являются справочными и могут варьироваться как в большую, так и в меньшую сторону в зависимости от марки и модели автомобиля, его конкретных конструктивных особенностей. Некоторые работы не проводятся без предварительной диагностики и необходимых обязательных предварительных работ, в том числе и по рекомендации завода изготовителя</p>
+
+                    <p>Записаться на техническое обслуживание автомобиля можно по телефону<strong> +7 (123) 456 78 90</strong></p>
+                </div>
+	   		    <div class="modal-footer">
+        		    <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		    </div>
+	        </div>
+	    </div>
+	</div>
+
+    
+
+	<div class="modal fade bs-example-modal-lg" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	    <div class="modal-dialog modal-lg" role="document">
+	        <div class="modal-content">
+	    	    <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                <h4 class="modal-title" id="myModalLabel"><span class="icon ah-lodka"></span> Ремонт лодочных моторов</h4>
+	            </div>
+	            <div class="modal-body">
+	   			    <p><strong>Ремонт лодочных моторов</strong></p>
+                    <img alt="" src="images/modal/123456.jpg" style="height:282px; width:420px; margin: 3%; float:right;">
+
+                    <p>Чтобы автомобиль доставлял радость в поездках и не приносил неожиданных проблем, очень важно, особенно при отправке в дальнее путешествие на машине, пройти тщательное техническое обслуживание вашего авто. Техническое обслуживание автомобилей позволит контролировать машину на дороге. В процессе эксплуатации ваш автомобиль нуждается в постоянном осмотре, уборке салона, мойке, замене неисправных запчастей, замене масла. Качественный уход за автомобилем предохранит кузов автомобиля от воздействия соли и грязи, избавит от образования коррозии на металле и продлит долговечность авто</p>
+
+                    <p><strong>КАК ПОДДЕРЖИВАТЬ АВТОМОБИЛЬ В ИСПРАВНОМ СОСТОЯНИИ</strong></p>
+
+                    <p>Станция технического обслуживания автомобилей осуществляет полный комплекс различных работ, которые связаны с восстановлением технического состояния авто. Не всегда обслуживание обходиться лишь профилактическими работами. Часто требуется детальный ремонт узлов, агрегатов, различные регулировочные работы, а также смазочные и крепёжные. Техническое обслуживание и ремонт автомобилей бывают гарантийными и послегарантийными. Первый вид работ совершается бесплатно, замена неисправных деталей при послегарантийном обслуживании требует от владельца машины определённых денежных затрат на приобретение запчастей.</p>
+
+                    <p><strong>ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ ЛЕГКОВОГО АВТОМОБИЛЯ ВКЛЮЧАЕТ:</strong></p>
+
+                    <ul>
+	                    <li>профилактический осмотр и компьютерную диагностику с целью выявления неполадок в системах автомобиля</li>
+	                    <li>замену масла и другие смазочные работы</li>
+	                    <li>мелкий или капитальный ремонт агрегатов и узлов, если при осмотре выявлены неисправности в их системе</li>
+	                    <li>регулировку различных систем автомобиля</li>
+	                    <li>электротехнические работы</li>
+	                    <li>арматурные работы</li>
+	                    <li>необходимые окрасочные работы кузова</li>
+	                    <li>проверку и регулировку развал-схождения колёс</li>
+	                    <li>тщательный осмотр подвески автомобиля</li>
+                    </ul>
+                    
+                    <p>В зависимости от вида работ и степени их сложности они могут выполняться без снятия агрегата с авто и его разборки. Мастер осуществляет полную проверку различных креплений, зазоров, установку механизмов. Однако внешний осмотр не всегда позволяет обнаружить многие дефекты, поэтому на станции техобслуживания применяется современное диагностическое оборудование, способное дать полную информацию о состоянии вашего автомобиля.</p>
+
+                    <p>Только тщательная компьютерная диагностика технического состояния автомобиля позволит выявить и устранить сложные дефекты и неисправности. Своевременное техническое обслуживание вашего автомобиля позволит вам не беспокоиться о внезапной поломке во время совершения поездки, чувствовать себя за рулём спокойно и уверено.
+                    </p>
+                    <img alt="" src="images/modal/12345.jpg" style="width:100%; margin:3% auto;">
+                    <p>Расценки на некоторые виды работ:</p>
+                    <div class="table-responsive">
+	                    <table class="table table-bordered">
+		                    <tbody>
+			                    <tr>
+				                    <th>Наименование работ</th>
+				                    <th>Цена</th>
+			                    </tr>
+			                    <tr>
+				                    <td>Стоимость нормо-часа</td>
+				                    <td>от 150 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масла</td>
+				                    <td>от 60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масляного фильтра</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена тормозной жидкости</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена воздушного фильтра</td>
+				                    <td>от 10 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок (1 ось)</td>
+				                    <td>от 90 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок и тормозных дисков (1 ось)</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Контрольный осмотр подвески</td>
+				                    <td>60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена сайлент-блоков</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена ступичных подшипников</td>
+				                    <td>от 160 рублей</td>
+			                    </tr>
+		                    </tbody>
+	                    </table>
+                    </div>
+
+                    <p>Данные расценки являются справочными и могут варьироваться как в большую, так и в меньшую сторону в зависимости от марки и модели автомобиля, его конкретных конструктивных особенностей. Некоторые работы не проводятся без предварительной диагностики и необходимых обязательных предварительных работ, в том числе и по рекомендации завода изготовителя</p>
+
+                    <p>Записаться на техническое обслуживание автомобиля можно по телефону<strong> +7 (123) 456 78 90</strong></p>
+                </div>
+	   		    <div class="modal-footer">
+        		    <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		    </div>
+	        </div>
+	    </div>
+	</div>
+
+
+    
+	<div class="modal fade bs-example-modal-lg" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	    <div class="modal-dialog modal-lg" role="document">
+	        <div class="modal-content">
+	    	    <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                <h4 class="modal-title" id="myModalLabel"><span class="icon ah-engin"></span> Диагностика и ремонт дизельных генераторов</h4>
+	            </div>
+	            <div class="modal-body">
+	   			    <p><strong>Диагностика и ремонт дизельных генераторов</strong></p>
+                    <img alt="" src="images/modal/123456.jpg" style="height:282px; width:420px; margin: 3%; float:right;">
+
+                    <p>Чтобы автомобиль доставлял радость в поездках и не приносил неожиданных проблем, очень важно, особенно при отправке в дальнее путешествие на машине, пройти тщательное техническое обслуживание вашего авто. Техническое обслуживание автомобилей позволит контролировать машину на дороге. В процессе эксплуатации ваш автомобиль нуждается в постоянном осмотре, уборке салона, мойке, замене неисправных запчастей, замене масла. Качественный уход за автомобилем предохранит кузов автомобиля от воздействия соли и грязи, избавит от образования коррозии на металле и продлит долговечность авто</p>
+
+                    <p><strong>КАК ПОДДЕРЖИВАТЬ АВТОМОБИЛЬ В ИСПРАВНОМ СОСТОЯНИИ</strong></p>
+
+                    <p>Станция технического обслуживания автомобилей осуществляет полный комплекс различных работ, которые связаны с восстановлением технического состояния авто. Не всегда обслуживание обходиться лишь профилактическими работами. Часто требуется детальный ремонт узлов, агрегатов, различные регулировочные работы, а также смазочные и крепёжные. Техническое обслуживание и ремонт автомобилей бывают гарантийными и послегарантийными. Первый вид работ совершается бесплатно, замена неисправных деталей при послегарантийном обслуживании требует от владельца машины определённых денежных затрат на приобретение запчастей.</p>
+
+                    <p><strong>ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ ЛЕГКОВОГО АВТОМОБИЛЯ ВКЛЮЧАЕТ:</strong></p>
+
+                    <ul>
+	                    <li>профилактический осмотр и компьютерную диагностику с целью выявления неполадок в системах автомобиля</li>
+	                    <li>замену масла и другие смазочные работы</li>
+	                    <li>мелкий или капитальный ремонт агрегатов и узлов, если при осмотре выявлены неисправности в их системе</li>
+	                    <li>регулировку различных систем автомобиля</li>
+	                    <li>электротехнические работы</li>
+	                    <li>арматурные работы</li>
+	                    <li>необходимые окрасочные работы кузова</li>
+	                    <li>проверку и регулировку развал-схождения колёс</li>
+	                    <li>тщательный осмотр подвески автомобиля</li>
+                    </ul>
+                    
+                    <p>В зависимости от вида работ и степени их сложности они могут выполняться без снятия агрегата с авто и его разборки. Мастер осуществляет полную проверку различных креплений, зазоров, установку механизмов. Однако внешний осмотр не всегда позволяет обнаружить многие дефекты, поэтому на станции техобслуживания применяется современное диагностическое оборудование, способное дать полную информацию о состоянии вашего автомобиля.</p>
+
+                    <p>Только тщательная компьютерная диагностика технического состояния автомобиля позволит выявить и устранить сложные дефекты и неисправности. Своевременное техническое обслуживание вашего автомобиля позволит вам не беспокоиться о внезапной поломке во время совершения поездки, чувствовать себя за рулём спокойно и уверено.
+                    </p>
+                    <img alt="" src="images/modal/12345.jpg" style="width:100%; margin:3% auto;">
+                    <p>Расценки на некоторые виды работ:</p>
+                    <div class="table-responsive">
+	                    <table class="table table-bordered">
+		                    <tbody>
+			                    <tr>
+				                    <th>Наименование работ</th>
+				                    <th>Цена</th>
+			                    </tr>
+			                    <tr>
+				                    <td>Стоимость нормо-часа</td>
+				                    <td>от 150 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масла</td>
+				                    <td>от 60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масляного фильтра</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена тормозной жидкости</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена воздушного фильтра</td>
+				                    <td>от 10 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок (1 ось)</td>
+				                    <td>от 90 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок и тормозных дисков (1 ось)</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Контрольный осмотр подвески</td>
+				                    <td>60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена сайлент-блоков</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена ступичных подшипников</td>
+				                    <td>от 160 рублей</td>
+			                    </tr>
+		                    </tbody>
+	                    </table>
+                    </div>
+
+                    <p>Данные расценки являются справочными и могут варьироваться как в большую, так и в меньшую сторону в зависимости от марки и модели автомобиля, его конкретных конструктивных особенностей. Некоторые работы не проводятся без предварительной диагностики и необходимых обязательных предварительных работ, в том числе и по рекомендации завода изготовителя</p>
+
+                    <p>Записаться на техническое обслуживание автомобиля можно по телефону<strong> +7 (123) 456 78 90</strong></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+                </div>
+	        </div>
+	    </div>
+	</div>
+
+
+    
+	<div class="modal fade bs-example-modal-lg" id="myModal11" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	    <div class="modal-dialog modal-lg" role="document">
+	        <div class="modal-content">
+	    	    <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                <h4 class="modal-title" id="myModalLabel"><span class="icon ah-moto"></span> Ремонт мототехники</h4>
+	            </div>
+	            <div class="modal-body">
+	   			    <p><strong>Ремонт мототехники</strong></p>
+                    <img alt="" src="images/modal/123456.jpg" style="height:282px; width:420px; margin: 3%; float:right;">
+
+                    <p>Чтобы автомобиль доставлял радость в поездках и не приносил неожиданных проблем, очень важно, особенно при отправке в дальнее путешествие на машине, пройти тщательное техническое обслуживание вашего авто. Техническое обслуживание автомобилей позволит контролировать машину на дороге. В процессе эксплуатации ваш автомобиль нуждается в постоянном осмотре, уборке салона, мойке, замене неисправных запчастей, замене масла. Качественный уход за автомобилем предохранит кузов автомобиля от воздействия соли и грязи, избавит от образования коррозии на металле и продлит долговечность авто</p>
+
+                    <p><strong>КАК ПОДДЕРЖИВАТЬ АВТОМОБИЛЬ В ИСПРАВНОМ СОСТОЯНИИ</strong></p>
+
+                    <p>Станция технического обслуживания автомобилей осуществляет полный комплекс различных работ, которые связаны с восстановлением технического состояния авто. Не всегда обслуживание обходиться лишь профилактическими работами. Часто требуется детальный ремонт узлов, агрегатов, различные регулировочные работы, а также смазочные и крепёжные. Техническое обслуживание и ремонт автомобилей бывают гарантийными и послегарантийными. Первый вид работ совершается бесплатно, замена неисправных деталей при послегарантийном обслуживании требует от владельца машины определённых денежных затрат на приобретение запчастей.</p>
+
+                    <p><strong>ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ ЛЕГКОВОГО АВТОМОБИЛЯ ВКЛЮЧАЕТ:</strong></p>
+
+                    <ul>
+	                    <li>профилактический осмотр и компьютерную диагностику с целью выявления неполадок в системах автомобиля</li>
+	                    <li>замену масла и другие смазочные работы</li>
+	                    <li>мелкий или капитальный ремонт агрегатов и узлов, если при осмотре выявлены неисправности в их системе</li>
+	                    <li>регулировку различных систем автомобиля</li>
+	                    <li>электротехнические работы</li>
+	                    <li>арматурные работы</li>
+	                    <li>необходимые окрасочные работы кузова</li>
+	                    <li>проверку и регулировку развал-схождения колёс</li>
+	                    <li>тщательный осмотр подвески автомобиля</li>
+                    </ul>
+                    
+                    <p>В зависимости от вида работ и степени их сложности они могут выполняться без снятия агрегата с авто и его разборки. Мастер осуществляет полную проверку различных креплений, зазоров, установку механизмов. Однако внешний осмотр не всегда позволяет обнаружить многие дефекты, поэтому на станции техобслуживания применяется современное диагностическое оборудование, способное дать полную информацию о состоянии вашего автомобиля.</p>
+
+                    <p>Только тщательная компьютерная диагностика технического состояния автомобиля позволит выявить и устранить сложные дефекты и неисправности. Своевременное техническое обслуживание вашего автомобиля позволит вам не беспокоиться о внезапной поломке во время совершения поездки, чувствовать себя за рулём спокойно и уверено.
+                    </p>
+                    <img alt="" src="images/modal/12345.jpg" style="width:100%; margin:3% auto;">
+                    <p>Расценки на некоторые виды работ:</p>
+                    <div class="table-responsive">
+	                    <table class="table table-bordered">
+		                    <tbody>
+			                    <tr>
+				                    <th>Наименование работ</th>
+				                    <th>Цена</th>
+			                    </tr>
+			                    <tr>
+				                    <td>Стоимость нормо-часа</td>
+				                    <td>от 150 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масла</td>
+				                    <td>от 60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена масляного фильтра</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена тормозной жидкости</td>
+				                    <td>от 45 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена воздушного фильтра</td>
+				                    <td>от 10 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок (1 ось)</td>
+				                    <td>от 90 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена колодок и тормозных дисков (1 ось)</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Контрольный осмотр подвески</td>
+				                    <td>60 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена сайлент-блоков</td>
+				                    <td>от 180 рублей</td>
+			                    </tr>
+			                    <tr>
+				                    <td>Замена ступичных подшипников</td>
+				                    <td>от 160 рублей</td>
+			                    </tr>
+		                    </tbody>
+	                    </table>
+                    </div>
+
+                    <p>Данные расценки являются справочными и могут варьироваться как в большую, так и в меньшую сторону в зависимости от марки и модели автомобиля, его конкретных конструктивных особенностей. Некоторые работы не проводятся без предварительной диагностики и необходимых обязательных предварительных работ, в том числе и по рекомендации завода изготовителя</p>
+
+                    <p>Записаться на техническое обслуживание автомобиля можно по телефону<strong> +7 (123) 456 78 90</strong></p>
+                </div>
+	   		    <div class="modal-footer">
+        		    <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		    </div>
+	        </div>
+	    </div>
+	</div>
+	
+<!-- /modals -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/common.js"></script>
+	
+</body>
+</html>
